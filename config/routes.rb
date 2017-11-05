@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'home#home'
   get '/contact' => 'home#contact'
-  resources :home
+  post 'request_contact', to: 'home#request_contact'
+ 
+  #resources :home
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

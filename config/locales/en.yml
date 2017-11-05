@@ -31,6 +31,20 @@ en:
     contact:
         title: Contact us
         contact_us: Complete the following form
+        
+        name: "Name:"
+        enter_name: Enter your name
+        email: "Email:"
+        enter_email: Enter your email address
+        telephone: "Telephone:"
+        enter_telephone: Enter your phone number
+        message: "Message:"
+        enter_message: What is your message?
+        submit: Contact us
+        
+    request_contact:
+      no_email: You must enter a valid email
+      email_sent: Thank you, we have received your message
     
 
 

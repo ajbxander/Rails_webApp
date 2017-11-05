@@ -28,3 +28,8 @@ h1, p {
 .centre p {
     size: 30px;
 }
+
+form label, form input {
+    display: block;
+    margin: 10px;
+}
