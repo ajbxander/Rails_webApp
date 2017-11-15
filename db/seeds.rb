@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+introduction = Video.where(title: 'Introduction').first
+introduction.delete if introduction
+
+videos = Video.create([title: 'Introduction', about: 'Welcome to the website'])
+
