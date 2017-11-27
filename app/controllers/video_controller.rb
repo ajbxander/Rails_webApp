@@ -1,28 +1,28 @@
-class VideosController < ApplicationController
+class VideoController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
-  # GET /videos
-  # GET /videos.json
+  # GET /video
+  # GET /video.json
   def index
-    @videos = Video.all
+    @video = Video.all
   end
 
-  # GET /videos/1
-  # GET /videos/1.json
+  # GET /video/1
+  # GET /video/1.json
   def show
   end
 
-  # GET /videos/new
+  # GET /video/new
   def new
     @video = Video.new
   end
 
-  # GET /videos/1/edit
+  # GET /video/1/edit
   def edit
   end
 
-  # POST /videos
-  # POST /videos.json
+  # POST /video
+  # POST /video.json
   def create
     @video = Video.new(video_params)
 
@@ -37,8 +37,8 @@ class VideosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /videos/1
-  # PATCH/PUT /videos/1.json
+  # PATCH/PUT /video/1
+  # PATCH/PUT /video/1.json
   def update
     respond_to do |format|
       if @video.update(video_params)
@@ -51,12 +51,12 @@ class VideosController < ApplicationController
     end
   end
 
-  # DELETE /videos/1
-  # DELETE /videos/1.json
+  # DELETE /video/1
+  # DELETE /video/1.json
   def destroy
     @video.destroy
     respond_to do |format|
-      format.html { redirect_to videos_url, notice: 'Video was successfully destroyed.' }
+      format.html { redirect_to video_url, notice: 'Video was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
